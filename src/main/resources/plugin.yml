@@ -1,0 +1,17 @@
+name: FactionWarfare
+version: '${project.version}'
+main: tk.diffusehyperion.factionwarfare.FactionWarfare
+api-version: 1.19
+description: Reimagined faction PVP!
+commands:
+  faction:
+    description: Main command for this plugin.
+    usage: /faction create
+  opfaction:
+    description: Operator-only command for this plugin.
+    usage: /opfaction save
+    permission: factionwarfare.opfaction
+permissions:
+  factionwarfare.opfaction:
+    default: op
+    description: Permissions to run /opfaction.
