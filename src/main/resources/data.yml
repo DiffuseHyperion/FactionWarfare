@@ -1,39 +1,40 @@
-testfactionname:
-  members:
-    owner: testplayer1
-    moderators:
-      - testplayer2
-      - testplayer3
-    members:
-      - testplayer4
-      - testplayer5
-  claimedareas:
-    capital:
-      captialname:
+#testfactionname:
+  #members:
+    #owner: testplayer1
+    #moderators:
+      #- testplayer2
+      #- testplayer3
+    #members:
+      #- testplayer4
+      #- testplayer5
+  #claimedareas:
+    #capital:
+      #captialname:
         #  x1, z1, x2, z2
-        coordinate: [ -1, -1, 1, 1 ]
-        resources: 100
-        upgrades:
-          - upgrade1
-          - upgrade2
-          - upgrade3
-    stronghold:
-      strongholdname1:
-        coordinate: [-2, -2, 2, 2 ]
-        resources: 75
-        upgrades:
-          - upgrade1
-          - upgrade2
-      strongholdname2:
-        coordinate: [-3, -3, 3, 3 ]
-        resources: 75
-        upgrades:
-          - upgrade1
-          - upgrade2
-    outpost:
-      outpostname1:
-        coordinate: [-4, -4, 4, 4 ]
-        resources: 50
-      outpostname2:
-        coordinate: [-5, -5, 5, 5 ]
-        resources: 50
+        #coordinate: [ -1, -1, 1, 1 ]
+        #resources: 100
+        #upgrades:
+          #- upgrade1
+          #- upgrade2
+          #- upgrade3
+    #stronghold:
+      #strongholdname1:
+        #coordinate: [-2, -2, 2, 2 ]
+        #resources: 75
+        #upgrades:
+          #- upgrade1
+          #- upgrade2
+      #strongholdname2:
+        #coordinate: [-3, -3, 3, 3 ]
+        #resources: 75
+        #upgrades:
+          #- upgrade1
+          #- upgrade2
+    #outpost:
+      #outpostname1:
+        #coordinate: [-4, -4, 4, 4 ]
+        #resources: 50
+      #outpostname2:
+        #coordinate: [-5, -5, 5, 5 ]
+        #resources: 50
+###

@@ -5,9 +5,9 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.checkerframework.checker.nullness.qual.NonNull;
 import tk.diffusehyperion.factionwarfare.Commands.faction.faction;
 import tk.diffusehyperion.factionwarfare.Commands.opfaction.opfaction;
+import tk.diffusehyperion.factionwarfare.Utility.factionOwnership;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,8 +24,8 @@ public final class FactionWarfare extends JavaPlugin {
         // Initialize an audiences instance for the plugin
         adventure = BukkitAudiences.create(this);
 
-        getCommand("faction").setExecutor(new faction());
-        getCommand("opfaction").setExecutor(new opfaction());
+        Objects.requireNonNull(getCommand("faction")).setExecutor(new faction());
+        Objects.requireNonNull(getCommand("opfaction")).setExecutor(new opfaction());
 
         dataFile = new File(getDataFolder(), "data.yml");
         if (!dataFile.exists()) {
@@ -34,7 +34,7 @@ public final class FactionWarfare extends JavaPlugin {
         }
 
         data = YamlConfiguration.loadConfiguration(dataFile);
-
+        new factionOwnership().update(false);
     }
 
     @Override

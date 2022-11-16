@@ -6,10 +6,10 @@ description: Reimagined faction PVP!
 commands:
   faction:
     description: Main command for this plugin.
-    usage: /faction create
+    usage: /faction (create/invite/promote)
   opfaction:
     description: Operator-only command for this plugin.
-    usage: /opfaction save
+    usage: /opfaction (save/role/delete)
     permission: factionwarfare.opfaction
 permissions:
   factionwarfare.opfaction:
